@@ -6,7 +6,6 @@ router.post("/kirimData", async (req, res) => {
   const {
    status,
    rssiString,
-   last_seen,
    koordinat,
  } = req.body;
 
@@ -15,7 +14,6 @@ router.post("/kirimData", async (req, res) => {
   const newData = new Data({
     status: status,
     rssiString: rssiString,
-    last_seen: last_seen,
     koordinat: koordinat,
   });
 
