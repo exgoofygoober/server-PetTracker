@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
 var mongoURL =
-  "mongodb+srv://Brankas_IoT:inimale268@atlascluster.tzthzvp.mongodb.net/storage";
+  "mongodb+srv://pettracker:gtyu12345@pettracker.p2wjz7i.mongodb.net/";
 
 
 mongoose.connect(mongoURL);
