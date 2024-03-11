@@ -4,7 +4,7 @@ const dataSchema = new mongoose.Schema(
   {
     status: String,
     rssiString: String,
-    koordinat: String,
+    LoRaData: String,
   },
   {
     timestamps: true,

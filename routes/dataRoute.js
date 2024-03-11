@@ -6,7 +6,7 @@ router.post("/kirimData", async (req, res) => {
   const {
    status,
    rssiString,
-   koordinat,
+   LoRaData,
  } = req.body;
 
   const timestamp = new Date();
@@ -14,7 +14,7 @@ router.post("/kirimData", async (req, res) => {
   const newData = new Data({
     status: status,
     rssiString: rssiString,
-    koordinat: koordinat,
+    LoRaData: LoRaData,
   });
 
   try {
