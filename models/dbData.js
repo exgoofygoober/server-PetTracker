@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dataSchema = new mongoose.Schema(
   {
     status: String,
-    rssi: String,
+    rssiString: String,
     last_seen: String,
     koordinat: String,
   },

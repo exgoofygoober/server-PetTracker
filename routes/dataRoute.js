@@ -4,27 +4,19 @@ const Data = require("../models/dbData");
 
 router.post("/kirimData", async (req, res) => {
   const {
-    status_pintu,
-    teks_asli,
-    teks_enkripsi,
-    teks_dekripsi,
-    pinLama,
-    teks_enkripsi_sebelum,
-    pinBaru,
-    teks_enkripsi_sesudah,
+   status,
+   rssiString,
+   last_seen,
+   koordinat,
  } = req.body;
 
   const timestamp = new Date();
 
   const newData = new Data({
-    status_pintu: status_pintu,
-    teks_asli: teks_asli,
-    teks_enkripsi: teks_enkripsi,
-    teks_dekripsi: teks_dekripsi,
-    pin_lama: pinLama,
-    teks_enkripsi_sebelum: teks_enkripsi_sebelum,
-    pin_baru: pinBaru,
-    teks_enkripsi_sesudah: teks_enkripsi_sesudah,
+    status: status,
+    rssiString: rssiString,
+    last_seen: last_seen,
+    koordinat: koordinat,
   });
 
   try {

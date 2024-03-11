@@ -3,9 +3,9 @@ const cors = require("cors");
 
 const dbConfig = require("./mongoDB");
 
-const encryptedRoute = require("./routes/encryptedRoute");
+//const encryptedRoute = require("./routes/encryptedRoute");
 const dataRoute = require("./routes/dataRoute");
-const riwayatPinRoute = require("./routes/riwayatPinRoute");
+//const riwayatPinRoute = require("./routes/riwayatPinRoute");
 
 
 const app = express();
@@ -21,9 +21,9 @@ app.get("/", async (req, res, next) => {
   });
 });
 
-app.use("/api/encrypted", encryptedRoute);
+//app.use("/api/encrypted", encryptedRoute);
 app.use("/api/data", dataRoute);
-app.use("/api/riwayatpin", riwayatPinRoute);
+//app.use("/api/riwayatpin", riwayatPinRoute);
 
 
 const port = process.env.PORT || 3000;
