@@ -4,17 +4,17 @@ const Data = require("../models/dbData");
 
 router.post("/kirimData", async (req, res) => {
   const {
- //  status,
+   status,
    rssiString,
-  // LoRaData,
+   LoRaData,
  } = req.body;
 
   const timestamp = new Date();
 
   const newData = new Data({
-  //  status: status,
-    rssiString: rssiString
- //   LoRaData: LoRaData,
+    status: status,
+    rssiString: rssiString,
+    LoRaData: LoRaData,
   });
 
   try {
