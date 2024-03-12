@@ -2,9 +2,9 @@ const mongoose = require("mongoose");
 
 const dataSchema = new mongoose.Schema(
   {
-    status: String,
-    rssiString: String,
-    LoRaData: String,
+ //   status: String,
+    rssiString: String
+  //  LoRaData: String,
   },
   {
     timestamps: true,
